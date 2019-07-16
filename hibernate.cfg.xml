@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE hibernate-configuration PUBLIC "-//Hibernate/Hibernate Configuration DTD 3.0//EN" "http://hibernate.sourceforge.net/hibernate-configuration-3.0.dtd">
+<hibernate-configuration>
+  <session-factory>
+  
+     <property name="hibernate.connection.driver_class"> com.mysql.jdbc.Driver</property>
+     
+	 <property name="hibernate.connection.url"> jdbc:mysql://localhost:3306/aquazen-crm</property>
+     <property name="hibernate.connection.username">root</property>
+     <property name="connection.password">root</property>
+      
+	 <!-- <property name="hibernate.connection.url"> jdbc:mysql://aquazen-crm.cftjootvajkr.us-east-2.rds.amazonaws.com:3306/aquazenCrmDB</property>
+     <property name="hibernate.connection.username">AquazzenDBmsT</property>
+     <property name="connection.password">aquazen#Db#123</property> -->
+   
+    <property name="connection.pool_size">11</property>
+    <property name="hibernate.dialect">org.hibernate.dialect.MySQLDialect </property>
+    <property name="show_sql">true</property>
+    <property name="connection.autoReconnect">true</property>
+    <property name="connection.autoReconnectForPools">true</property>
+    <property name="connection.is-connection-validation-required">true</property>
+    <property name="hbm2ddl.auto">update</property>
+    
+    <!-- masterVos  -->
+    <mapping class="vo.OrderByMasterVo"/>
+    <mapping class="vo.AnniversaryBirthDayVo"/>
+    <mapping class="vo.VisitOfficeVo"/>
+    <mapping class="vo.MenuMasterVo"/>
+    <mapping class="vo.PermissionVo"/>
+    <mapping class="vo.ErrorMasterVo"/>
+    <mapping class="vo.AddressCheckByVo"/>
+    <mapping class="vo.DistrictMasterVo"/>
+    <mapping class="vo.CategoryTypeVo" />
+    <mapping class="vo.HrmEmployeeMasterVo"/>
+    <mapping class="vo.AssignedTaskFollowUpVo"/>
+    <mapping class="vo.TimeScheduleVo"/>
+    <mapping class="vo.EmployeeSalaryVo"/>
+    <mapping class="vo.AttendanceMasterVo"/>
+    <mapping class="vo.PrintStickerVo"/>
+    <mapping class="vo.CityMasterVo"/>
+    <mapping class="vo.StateVo"/>
+    <mapping class="vo.AssignedTaskVo"/>
+    <mapping class="vo.LoginVo"/>
+    <mapping class="vo.MessageVo"/>
+    <mapping class="vo.SuperAdminVo"/>
+    <mapping class="vo.MessageFormatVo"/>
+    <mapping class="vo.MessageApiVo"/>
+    <mapping class="vo.LoginActivityVo"/>
+    <mapping class="vo.CustomerMasterVo"/>
+    <mapping class="vo.InquiryMasterVo"/>
+    <mapping class="vo.InquirySourceVo"/>
+    <mapping class="vo.CustomerPartyTypeVo"/>
+    <mapping class="vo.InquiryFollowupVo"/>
+    <mapping class="vo.EmployeeMasterVo"/>
+    <mapping class="vo.CustomerDateAndMobileVo" />
+     <mapping class="vo.CurrierMasterVo" />
+    <mapping class="vo.TransportMasterVo" />
+    <mapping class="vo.BookingBranchMasterVo" />
+    <mapping class="vo.PartyActivityMasterVo" />
+    <mapping class="vo.RefereMasterVo" />
+    <!-- End masterVos  -->
+   	        
+ 
+  </session-factory>
+</hibernate-configuration>
+
