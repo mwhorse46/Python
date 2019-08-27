@@ -18,3 +18,23 @@ for num in range(lower,upper + 1):
                break
        else:
            print(num)
+
+            
+            
+                
+- > spring starter project
+- > dependencies = mysql driver, spring boot devtools, spring data jpa, spring web starter
+- > copy from web = tomcat embed jasper, jstl (remove version tag)
+- > version tag 2.1.4
+- > then application.properties -
+	spring.prefix=/WEB-INF/
+	spring.suffix.jsp
+	spring.datasource.url=jdbc:mysql://localhose:3306/databasename
+	spring.datasource.username=root
+	spring.datasource.password=root
+	spring.jpa.hibernate.ddl-auto=update
+	spring.jpa.show-sql=true
+- > create folder in main name it webapp and inside webapp create another name it WEB-INF
+- > create packages
+- > in controller @RestController and @RequestMapping("/")
+- > Finish Motherfucker now do it on your own way.a
